@@ -1,0 +1,63 @@
+<!-- 
+    HTML => Hyper Text Markup Language
+    1. Tags 
+         Opening tag => <tagName>
+         Closing tag => </tagName>
+         Ex: <h1>Content</h1> => 32px, Times New Roman, black
+    2. Element
+        Combination of opening tag, content, Closing tag
+        Ex: <h1>Content</h1> => element
+        2.1 Nested-element:
+            Element inside another element
+            <head> => parent element
+                <title>...</title>* => child element
+                <link rel="stylesheet" href="style.css">* => child element
+                                                            *siblings
+            </head>
+        2.2 Block-level element
+            Occupies complete width of the browser display area
+            Always starts in new line
+            Ex: <h1>, <p>
+        2.3 Inline element
+            Occupies the space in the browser display area depends on the content
+        2.4 Void elements
+            Doesn't have closing tag
+            Ex: <hr> or <hr />
+    3. Attribute
+        Presents in opening tag of an element
+        key = value pair
+        An element may have morethan one attribute
+        <a href="path" target="_blank">displayContent</a>
+        3.1 Keyed attributes
+            Doesn't have value part
+            Ex: <button disabled>click</button>
+    4. Structure
+        html, head => title, body
+        <html>
+            <head>
+                <title>...</title>
+            </head>
+            <body></body>
+        </html>
+ -->
+<html>
+  <head>
+    <title>HTML Structure</title>
+  </head>
+  <body>
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heaading five</h5>
+    <h6>Heading six</h6>
+    <hr />
+    <img src="./person-1.jpg" alt="person-1" height="300px" width="300px" />
+    <hr />
+    <img src="./person-1.jpg" alt="person-2" height="300px" width="300px" />
+    <hr />
+    <img src="./person-1.jpg" alt="person-3" height="300px" width="300px" />
+    <hr />
+    <button disabled>Submit</button>
+  </body>
+</html>
