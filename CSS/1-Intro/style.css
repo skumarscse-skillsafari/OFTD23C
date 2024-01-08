@@ -1,0 +1,41 @@
+#head {
+  color: crimson;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-weight: bold;
+  text-decoration: underline;
+  word-spacing: 20px;
+  letter-spacing: 20px;
+  background-color: aqua;
+  border: 2px solid red;
+  border-radius: 10px;
+  line-height: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: cadetblue;
+  font-weight: normal;
+}
+
+p::first-letter {
+  font-size: 76px;
+  color: green;
+}
+#circle {
+  height: 250px;
+  width: 250px;
+  background-color: darkmagenta;
+  border-radius: 50%;
+}
+
+#circle:hover {
+  border-radius: 0;
+}
+
+/* #lorem {
+  color: green;
+  font-size: 45px;
+  font-family: cursive;
+} */

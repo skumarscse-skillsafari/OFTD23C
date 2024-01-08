@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Single and Multi-line Input" />
+    <title>Single and Multi-line Input</title>
+  </head>
+  <body>
+    <!-- 
+        Form
+        1. Single line input => <input type="text/number/email/password/date" />
+        2. Multi line input => <textarea row="" col=""></textarea>
+        3. One input from multiple options => <input type="radio" />
+        4. Multiple input from multiple options => <input type="checkbox" />
+        5. Drop-down 
+        6. Upload => <input type="file" />
+     -->
+    <!-- 
+        Firstname, Lastname, email, password, age, DOB, Address, File upload
+        http://127.0.0.1:5500/HTML/9-Forms/1-single-multi-line.html
+        ?firstname=John&
+        lastname=Jack&
+        email=admin%40admin.com&
+        password=123456&
+        age=12&
+        file=Class+Schedule+for+FSD20A.docx&
+        address=ABC+Street#
+      -->
+    <h2>Single and Multi-line Input</h2>
+    <h3>Registration Form</h3>
+    <form action="./thanks.html" method="post">
+      <fieldset>
+        <legend>Single and Multiple line Inputs</legend>
+        <table>
+          <tr>
+            <td><label for="firstname">Enter Firstname:</label></td>
+            <td>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Your firstname?"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Enter Lastname:</label></td>
+            <td>
+              <input type="text" name="lastname" placeholder="Your lastname?" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Enter email:</label></td>
+            <td>
+              <input type="email" name="email" placeholder="Your email?" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="Your password?"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" name="age" placeholder="Your age?" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB:</label></td>
+            <td><input type="date" name="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="file">Upload File:</label></td>
+            <td><input type="file" name="file" /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <textarea
+                name="address"
+                cols="30"
+                rows="5"
+                placeholder="Enter address..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Submit" /></td>
+            <td><input type="reset" value="Clear" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
