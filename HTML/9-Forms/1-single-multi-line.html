@@ -29,7 +29,7 @@
       -->
     <h2>Single and Multi-line Input</h2>
     <h3>Registration Form</h3>
-    <form action="./thanks.html" method="post">
+    <form action="#" method="post">
       <fieldset>
         <legend>Single and Multiple line Inputs</legend>
         <table>
@@ -46,7 +46,25 @@
           <tr>
             <td><label for="lastname">Enter Lastname:</label></td>
             <td>
-              <input type="text" name="lastname" placeholder="Your lastname?" />
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Your lastname?"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="college">Enter College name:</label></td>
+            <td>
+              <input
+                type="text"
+                name="college"
+                placeholder="Your college name?"
+                required
+                value="SkillSafari"
+                disabled
+              />
             </td>
           </tr>
           <tr>
@@ -91,6 +109,59 @@
           <tr>
             <td><input type="submit" value="Submit" /></td>
             <td><input type="reset" value="Clear" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Radio and Check Box</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="addons">Select any one:</label>
+            </td>
+            <td>
+              <input type="radio" name="addons" />Hostel
+              <input type="radio" name="addons" />Bus
+              <input type="radio" name="addons" />Library
+              <input type="radio" name="addons" checked />Uniform
+              <input type="radio" name="addons" />Scholarship
+            </td>
+          </tr>
+          <tr>
+            <td><label for="courses">Select your course(s):</label></td>
+            <td>
+              <input type="checkbox" name="english" />English
+              <input type="checkbox" name="maths" />Maths
+              <input type="checkbox" name="physics" />Physics
+              <input type="checkbox" name="chemistry" />Chemistry
+              <input type="checkbox" name="computer" checked />Computer
+            </td>
+          </tr>
+          <tr>
+            <td><label for="select-single">Select Subject (single):</label></td>
+            <td>
+              <select name="select-single">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Physics" selected>Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Computer">Computer</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="select-multiple">Select Subject (multiple):</label>
+            </td>
+            <td>
+              <select name="select-multiple" multiple>
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Computer">Computer</option>
+              </select>
+            </td>
           </tr>
         </table>
       </fieldset>

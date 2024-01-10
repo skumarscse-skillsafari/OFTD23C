@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Attribute Selector" />
+    <title>Attribute Selector</title>
+    <style>
+      /* 
+            selector {
+                propertyName-1: propertyValue-1;
+                              :
+                              :
+                propertyName-N: propertyValue-N;
+            }
+        */
+
+      /* 
+            Attribute Selector => Selects all the occurances of the selector element 
+                            inside the body section
+            [attributeName='value'] {
+                propertyName-1: propertyValue-1;
+                              :
+                              :
+                propertyName-N: propertyValue-N;
+            }
+        */
+      /* [class="head"] {
+        color: red;
+      } */
+
+      /* [class] {
+        color: red;
+      } */
+
+      /* [class="green"] {
+        color: green;
+      } */
+
+      /* p[class],
+      h2 {
+        color: green;
+      } */
+      /* selects the attribute value starts with "gre" */
+      /* [class^="gre"] {
+        color: green;
+      } */
+
+      /* selects the attribute value contains "ee" */
+      /* [class*="ee"] {
+        color: green;
+      } */
+
+      /* selects the attribute value ends with "ad" */
+      [class$="ad"] {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2 class="head">Attribute Selector</h2> -->
+    <h2 class="gre-head">Attribute Selector</h2>
+    <h3>Heading -3</h3>
+    <p class="green">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+      cupiditate!
+    </p>
+    <div>
+      <!-- <h2 class="head">Container</h2> -->
+      <h2 class="gre-head">Container</h2>
+      <p class="green">
+        Lorem ipsum dolor <a href="#"> sit amet consectetur,</a> adipisicing
+        elit. Illum, unde?
+      </p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </body>
+</html>
