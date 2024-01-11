@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Class selector" />
+    <title>ID Selector</title>
+    <style>
+      /* 
+            id => Used to find a element uniquely from the body section 
+            Specificity order
+            id > class > attribute > element
+        */
+      .text-green,
+      .text-red {
+        color: green;
+        font-weight: bold;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      .text-blue {
+        color: blue;
+      }
+
+      /* #border-black {
+        border: 2px solid black;
+      } */
+
+      #border-black.border-green {
+        border: 2px solid green;
+      }
+
+      div {
+        border: 2px solid red;
+      }
+
+      li {
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ID Selector</h2>
+    <div id="header">
+      <h2 class="text-green">Header section</h2>
+      <p class="text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+        dolorum!
+      </p>
+    </div>
+    <div id="about">
+      <h2 class="text-red">About section</h2>
+      <p class="text-green">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+        repudiandae!
+      </p>
+    </div>
+    <div id="projects">
+      <h2 class="text-green">Projects section</h2>
+      <p class="text-red">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+        repudiandae!
+      </p>
+      <ul>
+        <li id="border-black" class="text-blue border-green">To Do App</li>
+        <li class="border-green">Task Manager</li>
+        <li>Product Listing App</li>
+      </ul>
+    </div>
+  </body>
+</html>
