@@ -21,7 +21,7 @@
         background-color: crimson;
       }
 
-      h2::after {
+      h2:: {
         content: "";
         height: 5px;
         width: 32%;
@@ -32,6 +32,14 @@
 
       h2 {
         text-align: center;
+      }
+
+      p::first-line {
+        color: red;
+        line-height: 40px;
+        word-spacing: 30px;
+        letter-spacing: 20px;
+        text-decoration: underline dashed;
       }
     </style>
   </head>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="CSS Units - Percentage" />
+    <title>CSS Units - %</title>
+    <style>
+      .outer {
+        /* border-top: 2px solid red;
+        border-right: 2px dotted green;
+        border-bottom: 2px solid red;
+        border-left: 2px dotted green; */
+
+        /* border-top: 2px solid red;
+        border-right: 2px solid red;
+        border-bottom: 2px solid red;
+        border-left: 2px solid red; */
+
+        /* border: top-right-bottom-left */
+        /* border-block: top-bottom */
+        /* border-inline: left-right */
+
+        border-block: 2px solid red;
+        border-inline: 5px solid green;
+
+        background-color: gray;
+      }
+
+      .inner {
+        background-color: aqua;
+        border: 2px solid red;
+        /* padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px; */
+
+        /* padding: 50px 25px 50px 25px; */
+        /* padding: 50px 25px; */
+        padding: 30px;
+
+        /* margin: 10px 20px 30px 40px; */
+        /* margin: 20px 30px; */
+        margin: 30px;
+        width: 100px;
+      }
+
+      .parent {
+        height: 250px;
+        background-color: gold;
+        width: 500px;
+        border: 10px solid green;
+      }
+
+      .child {
+        width: 250px;
+        height: 100px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Units - %</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+      illo.
+    </p>
+
+    <div class="outer">
+      <h2>Outer Element</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+        harum.
+      </p>
+      <div class="inner">
+        <h2>Inner Element</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          consequatur.
+        </p>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
