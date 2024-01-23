@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Display" />
+    <title>Display</title>
+    <style>
+      /* Display
+            1. block
+            2. inline
+            3. inline-block
+            4. visibility
+            5. opacity
+        */
+      div {
+        background-color: burlywood;
+        margin-bottom: 5px;
+        color: brown;
+        padding: 10px;
+        width: 100px;
+        /* display: inline; */
+        /* display: block; */
+      }
+
+      a {
+        background-color: aquamarine;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        height: 30px;
+        width: 50px;
+        display: inline-block;
+      }
+
+      h2 + div {
+        font-weight: bold;
+        visibility: hidden;
+        /* display: none; */
+        /* opacity: 1; */
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Display</h2>
+    <div>Home</div>
+    <div>About</div>
+    <div>Projects</div>
+    <div>Contact</div>
+
+    <a href="#">Click</a>
+    <a href="#">Register</a>
+  </body>
+</html>
