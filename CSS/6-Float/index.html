@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Float" />
+    <title>Float</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      img {
+        height: 250px;
+        width: 250px;
+      }
+
+      button {
+        display: block;
+      }
+
+      .col-left,
+      .col-right {
+        border: 2px solid green;
+      }
+
+      .col-left {
+        float: left;
+        width: 48%;
+        margin-right: 10px;
+      }
+
+      .col-right {
+        float: right;
+        width: 40%;
+        margin: 0 50px;
+        transform: translateY(100px);
+      }
+
+      #para {
+        clear: both;
+      }
+
+      .center {
+        /* text-align: center; */
+        width: 80%;
+        margin: auto auto;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Float</h2>
+    <div class="row">
+      <div class="col-left">
+        <h2>Float Left</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+          placeat magnam! Esse autem, voluptatibus quia qui a debitis illo error
+          temporibus optio consequuntur necessitatibus quam!
+        </p>
+        <img src="./images/image-one.jpg" alt="image-one" />
+        <button>Know more...</button>
+      </div>
+      <!-- <div class="col-right">
+        <h2>Float Right</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+          placeat magnam! Esse autem, voluptatibus quia qui a debitis illo error
+          temporibus optio consequuntur necessitatibus quam!
+        </p>
+        <img src="./images/image-two.jpg" alt="image-two" />
+        <button>Know more...</button>
+      </div> -->
+      <p class="col-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos quo
+        nobis provident dicta vero quia nesciunt, sunt aut porro, in blanditiis
+        omnis voluptatibus atque illo quae ad. Alias distinctio odio fugiat aut
+        hic aspernatur placeat at porro voluptatibus totam!
+      </p>
+    </div>
+    <h2 class="center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum
+      atque, dolor quo suscipit assumenda soluta repellendus molestiae
+      reprehenderit nemo quia possimus distinctio. Repellat, id.
+    </h2>
+  </body>
+</html>

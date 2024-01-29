@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Colors" />
+    <title>Colors</title>
+    <style>
+      div {
+        border: 2px solid red;
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+
+      #color {
+        background-color: brown;
+      }
+
+      #hexa {
+        background-color: #833ab4;
+      }
+
+      #rgb {
+        background: rgb(43, 165, 32);
+      }
+
+      #rgba {
+        background: rgba(32, 52, 165, 67);
+      }
+
+      #linear {
+        background: rgb(32, 52, 165);
+        background: linear-gradient(
+          212deg,
+          rgba(32, 52, 165, 0.6666316184676996) 0%,
+          rgba(164, 59, 59, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+      }
+
+      #radial {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Colors</h2>
+
+    <div id="color"></div>
+
+    <div id="hexa"></div>
+
+    <div id="rgb"></div>
+
+    <div id="rgba"></div>
+
+    <div id="linear"></div>
+
+    <div id="radial"></div>
+  </body>
+</html>
