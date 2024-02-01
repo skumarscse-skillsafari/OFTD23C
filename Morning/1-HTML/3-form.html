@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Form" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h2>Form</h2>
+    <form action="./thanks.html" method="get">
+      <table>
+        <tr>
+          <td>
+            <label for="firstname"><b>Enter your firstname:</b> </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Enter your firstname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lastname">Enter your lastname:</label></td>
+          <td>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Enter your last name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" name="age" placeholder="Enter age" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Enter email:</label></td>
+          <td><input type="email" name="email" placeholder="Enter email" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Enter Password:</label></td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Enter Address:</label></td>
+          <td>
+            <textarea
+              name="address"
+              cols="21"
+              rows="5"
+              placeholder="Enter address..."
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="gender">Select Gender:</label></td>
+          <td>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+          </td>
+        </tr>
+        <tr>
+          <td><label for="hobbies">Select Hobbie(s):</label></td>
+          <td>
+            <input type="checkbox" name="hobby-1" />Newspaper
+            <input type="checkbox" name="hobby-2" />Cricket
+            <input type="checkbox" name="hobby-3" />Football
+          </td>
+        </tr>
+        <tr>
+          <td><label for="upload">Upload File:</label></td>
+          <td><input type="file" name="file" /></td>
+        </tr>
+        <tr>
+          <td><label for="subjects">Select Subject:</label></td>
+          <td>
+            <select name="subjects" multiple>
+              <option value=""></option>
+              <option value="English">English</option>
+              <option value="Maths">Maths</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Register" />
+            <input type="reset" value="Clear" />
+            <!-- <button>Register</button>
+            <button>Clear</button> -->
+          </td>
+        </tr>
+        <!-- 
+            ?firstname=John
+            &lastname=Jack
+            &age=23
+            &email=john%40gmail.com
+            &password=123
+            &address=Demo+Address
+            &gender=on&hobby-1=on
+            &hobby-3=on
+            &file=Default.jpg
+            &subjects=English
+         -->
+      </table>
+    </form>
+  </body>
+</html>
