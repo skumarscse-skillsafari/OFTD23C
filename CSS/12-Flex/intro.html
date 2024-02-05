@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Flex" />
+    <title>Flex</title>
+    <style>
+      #projects {
+        border: 2px solid red;
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: center;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+        /* align-items: flex-start;
+        align-items: center;
+        align-items: flex-end;
+        flex-wrap: wrap;*/
+        height: 100vh;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project {
+        height: 200px;
+        width: 200px;
+        background: cornflowerblue;
+        margin: 5px;
+        /* flex-grow: 1; */
+      }
+
+      /* .project-1 {
+        flex-grow: 1;
+      }
+
+      .project-2 {
+        flex-grow: 5;
+      }
+
+      .project-3 {
+        flex-grow: 1;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>Flex</h2>
+    <section id="projects">
+      <div class="project project-1">One</div>
+      <div class="project project-2">Two</div>
+      <div class="project project-3">Three</div>
+    </section>
+  </body>
+</html>
