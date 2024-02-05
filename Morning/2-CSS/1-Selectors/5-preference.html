@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Preference" />
+    <title>Preference</title>
+    <style>
+      /* 
+            * {
+                propertyName: propertyValue;
+            }
+
+            ID > Class > Attribute > Element
+            Inline > Internal === External
+            !important
+        */
+
+      p {
+        color: red;
+      }
+
+      #para {
+        color: blue;
+      }
+
+      .green {
+        color: green;
+      }
+
+      ul {
+        background-color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p id="para" class="green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quam.
+    </p>
+    <ul style="background-color: gray">
+      <li>Home</li>
+      <li>About</li>
+      <li id="green">Projects</li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>

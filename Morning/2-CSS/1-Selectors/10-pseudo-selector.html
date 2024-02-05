@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Pseudo - Selector" />
+    <title>Pseudo - Selector</title>
+    <style>
+      p:hover {
+        font-size: 24px;
+        border: 2px solid red;
+        background: green;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      #circle {
+        background-color: crimson;
+        height: 200px;
+        width: 200px;
+      }
+
+      #circle:hover {
+        border-radius: 50%;
+      }
+
+      li:nth-child(3) {
+        color: green;
+      }
+
+      p::first-letter {
+        font-size: 32px;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p::first-line {
+        color: blue;
+      }
+
+      p {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      h2::before {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 100px;
+        background: crimson;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        height: 10px;
+        width: 100px;
+        background: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pseudo Selector</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+      perferendis?
+    </p>
+
+    <div id="circle"></div>
+
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>
