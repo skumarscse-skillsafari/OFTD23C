@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Colors" />
+    <title>Colors</title>
+    <style>
+      div {
+        height: 200px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+        /* background-color: crimson; */
+      }
+
+      #name {
+        background-color: green;
+      }
+
+      #hex {
+        /* https://cssgradient.io/ */
+        background-color: #cf4637;
+      }
+
+      #rgb {
+        background-color: rgb(207, 55, 201);
+      }
+
+      #rgba {
+        background-color: rgb(207, 55, 201, 30);
+      }
+
+      #linear {
+        background: rgb(238, 174, 202);
+        background: linear-gradient(
+          117deg,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(207, 55, 201, 0.9215335792520133) 100%
+        );
+      }
+
+      #radial {
+        background: rgb(34, 193, 195);
+        background: radial-gradient(
+          circle,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(216, 253, 45, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Colors</h2>
+    <div id="name"></div>
+    <div id="hex"></div>
+    <div id="rgb"></div>
+    <div id="rgba"></div>
+    <div id="linear"></div>
+    <div id="radial"></div>
+  </body>
+</html>

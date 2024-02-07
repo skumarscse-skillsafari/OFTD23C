@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="vw and vh" />
+    <title>vw and vh</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 90%;
+        margin: 0 auto;
+        background: #4158d0;
+      }
+
+      nav {
+        background-color: #08aeea;
+        background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+        height: 50px;
+      }
+      header {
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+        height: calc(100vh - 50px);
+        /* width: 75vw; */
+      }
+
+      #about {
+        height: 100vh;
+        background-color: #ff9a8b;
+        background-image: linear-gradient(
+          90deg,
+          #ff9a8b 0%,
+          #ff6a88 55%,
+          #ff99ac 100%
+        );
+        width: 50%;
+        float: left;
+      }
+
+      #projects {
+        height: 100vh;
+        background: #215f00; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #e4e4d9,
+          #215f00
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #e4e4d9,
+          #215f00
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 50%;
+        float: left;
+      }
+
+      #portfolio {
+        height: 100vh;
+        background-image: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+        width: 50%;
+        clear: both;
+        float: left;
+      }
+
+      #contact {
+        height: 75vh;
+        background-color: #fad961;
+        background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+        width: 50%;
+        float: left;
+      }
+
+      footer {
+        height: 25vh;
+        background-color: #ff3cac;
+        background-image: linear-gradient(
+          225deg,
+          #ff3cac 0%,
+          #784ba0 50%,
+          #2b86c5 100%
+        );
+        /* clear: both; */
+        width: 50%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <header></header>
+    <section id="about"></section>
+    <section id="projects"></section>
+    <section id="portfolio"></section>
+    <section id="contact"></section>
+    <footer></footer>
+  </body>
+</html>
