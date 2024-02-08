@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Position - Absolute" />
+    <title>Position - Absolute</title>
+    <style>
+      #parent {
+        border: 2px solid red;
+        padding: 20px;
+        min-height: 200px;
+        width: 500px;
+        background-color: gray;
+        position: relative;
+      }
+
+      #child {
+        position: absolute;
+        left: 200px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position - Absolute</h2>
+
+    <div id="parent">
+      <div id="child">
+        <h2>Heading - 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+          eveniet!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
