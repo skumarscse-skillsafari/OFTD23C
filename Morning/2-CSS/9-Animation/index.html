@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      #box {
+        height: 150px;
+        width: 150px;
+        background: coral;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-fill-mode: backwards;
+      }
+
+      #box:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateY(300px);
+        }
+
+        50% {
+          transform: translateX(300px) translateY(300px);
+        }
+
+        100% {
+          transform: translateX(300px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="animate__animated animate__fadeInDown">Animation Library</h2>
+    <div id="box"></div>
+  </body>
+</html>

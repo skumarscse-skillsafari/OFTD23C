@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      #row {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        /* column-gap: 10px;
+        row-gap: 10px; */
+        gap: 20px 10px;
+        flex-wrap: wrap;
+      }
+      .col {
+        height: 300px;
+        /* flex-grow: 1; */
+        width: 200px;
+        background: cadetblue;
+        /* margin: 10px; */
+      }
+
+      .col-2 {
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="row">
+      <div class="col col-1">One</div>
+      <div class="col col-2">Two</div>
+      <div class="col col-3">Three</div>
+      <div class="col col-4">Four</div>
+    </div>
+  </body>
+</html>
