@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media - Query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h2 {
+        font-size: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      #parent {
+        height: 100vh;
+        border: 2px solid red;
+        background: green;
+        display: flex;
+        gap: 10px;
+      }
+
+      .col {
+        width: 200px;
+        height: 200px;
+        background: cadetblue;
+      }
+      /* max-width => up to => existing property + media query property */
+      @media screen and (max-width: 576px) {
+        h2 {
+          font-size: 32px;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          border: 3px solid blue;
+          padding: 20px;
+        }
+
+        #parent {
+          background: red;
+          flex-wrap: wrap;
+          height: auto;
+        }
+
+        .col {
+          flex-grow: 1;
+        }
+      }
+
+      @media screen and (min-width: 577px) and (max-width: 768px) {
+        #parent {
+          background: blue;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        #parent {
+          background: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <!-- <h2>Heading</h2> -->
+      <div class="col col-1"></div>
+      <div class="col col-2"></div>
+      <div class="col col-3"></div>
+      <div class="col col-4"></div>
+    </div>
+  </body>
+</html>
